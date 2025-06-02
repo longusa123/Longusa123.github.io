@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 50px;
+            color: #333;
+        }
+        .button {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .credit {
+            position: fixed;
+            bottom: -100%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            animation: scrollUp 20s linear infinite;
+            color: #555;
+        }
+        @keyframes scrollUp {
+            0% { bottom: -100%; }
+            100% { bottom: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mini Game</h1>
+    <button class="button" onclick="alert('Game đang được phát triển!')">🎮 Chơi ngay</button>
+    <button class="button" onclick="alert('Vòng quay Jackpot đang được phát triển!')">🎰 Vòng quay Jackpot</button>
+    <div class="credit">
+        Bạn có thể chơi game bằng nhập từ khóa có liên quan như chơi game, tôi muốn chơi trò chơi,... nếu có lỗi gì thì hãy hỏi longvn nha!<br>
+        © 2025 longvn. All rights reserved.
+    </div>
+</body>
+</html>
